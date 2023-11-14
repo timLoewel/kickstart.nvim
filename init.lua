@@ -114,6 +114,10 @@ require('lazy').setup({
   -- Useful plugin to show you pending keybinds.
   { 'folke/which-key.nvim', opts = {} },
   {
+    "jeffkreeftmeijer/vim-numbertoggle",
+    lazy = false,
+  },
+  {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
     opts = {
@@ -216,7 +220,9 @@ require('lazy').setup({
     },
     build = ':TSUpdate',
   },
-
+  {
+    'github/copilot.vim',
+  },
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
